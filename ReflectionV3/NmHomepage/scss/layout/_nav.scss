@@ -1,0 +1,369 @@
+nav {
+    width: 100%;
+    height: 99px;
+    background: #333645;
+    display: none;
+    position: relative;
+    font-size: 1.125rem;
+}
+
+// For the pushy nav buttons
+
+.nav-button {
+    display: flex;
+    flex-direction: column;
+    background-color: #333645;
+    text-decoration: none;
+    padding: 19px 0px 18px;
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    font-size: 18px;
+    z-index: 2;
+}
+
+.main-nav-container {
+    width: 970px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.web-nav,
+.support-nav,
+.tele-nav,
+.software-nav,
+.digital-nav,
+.cyber-nav {
+    width: 154.33px;
+    height: 100%;
+    padding: 19px 0 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    color: white;
+    border-left: 1px solid rgba(0, 0, 0, 0.25);
+    border-right: 1px solid hsla(0, 0%, 100%, 0.1);
+    font-size: 1.125rem;
+    line-height: 1;
+}
+
+// Nav Sub menu dropdowns //
+
+.nav-sub-text {
+    width: 930px;
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    list-style: none;
+    font-size: 0.8125rem;
+    text-transform: uppercase;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-sub-text li {
+    display: inline-flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    vertical-align: middle;
+    height: 100%;
+    padding-left: 20px;
+    border: none;
+    text-decoration: none;
+    a {
+        text-decoration: none;
+        color: white;
+    }
+}
+
+.dash {
+    width: 6px;
+    height: 2px;
+    background-color: white;
+    vertical-align: middle;
+    display: inline-block;
+    content: "";
+    margin: auto 0;
+    margin-left: 24px;
+}
+
+.dash-lg {
+    width: 6px;
+    height: 2px;
+    background-color: white;
+    vertical-align: middle;
+    display: inline-block;
+    content: "";
+    margin: auto 0;
+    margin-left: 60px;
+}
+
+.web-nav-sub,
+.support-nav-sub,
+.tele-nav-sub,
+.software-nav-sub,
+.digital-nav-sub,
+.cyber-nav-sub {
+    position: absolute;
+    top: 99px;
+    left: 0px;
+    display: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    justify-items: center;
+    width: 100%;
+    height: 45px;
+    border: none;
+    z-index: 999;
+}
+
+.web-nav-sub {
+    background: $dark-purple;
+}
+
+.support-nav-sub {
+    background: $dark-blue;
+}
+
+.tele-nav-sub {
+    background: $dark-red;
+}
+
+.software-nav-sub {
+    background: $slate-blue;
+}
+
+.digital-nav-sub {
+    background: $dark-green;
+}
+
+.cyber-nav-sub {
+    background: $dark-pink;
+}
+
+.web-nav-sub::before {
+    content: "";
+    height: 45px;
+    width: 500px;
+    position: absolute;
+    top: 0;
+    right: 100%;
+    background: #79539a;
+    overflow: hidden;
+    border: none;
+}
+
+.web-nav-sub::after {
+    content: "";
+    height: 45px;
+    width: 2000px;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    background: #79539a;
+    overflow: hidden;
+    border: none;
+}
+
+.support-nav-sub::before {
+    content: "";
+    height: 45px;
+    width: 500px;
+    position: absolute;
+    top: 0;
+    right: 100%;
+    background: $dark-blue;
+    overflow: hidden;
+    border: none;
+}
+
+.support-nav-sub::after {
+    content: "";
+    height: 45px;
+    width: 2000px;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    background: $dark-blue;
+    overflow: hidden;
+    border: none;
+}
+
+.tele-nav-sub::before {
+    content: "";
+    height: 45px;
+    width: 500px;
+    position: absolute;
+    top: 0;
+    right: 100%;
+    background: $dark-red;
+    overflow: hidden;
+    border: none;
+}
+
+.tele-nav-sub::after {
+    content: "";
+    height: 45px;
+    width: 2000px;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    background: $dark-red;
+    overflow: hidden;
+    border: none;
+}
+
+.software-nav-sub::before {
+    content: "";
+    height: 45px;
+    width: 500px;
+    position: absolute;
+    top: 0;
+    right: 100%;
+    background: $slate-blue;
+    overflow: hidden;
+    border: none;
+}
+
+.software-nav-sub::after {
+    content: "";
+    height: 45px;
+    width: 2000px;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    background: $slate-blue;
+    overflow: hidden;
+    border: none;
+}
+
+.digital-nav-sub::before {
+    content: "";
+    height: 45px;
+    width: 500px;
+    position: absolute;
+    top: 0;
+    right: 100%;
+    background: $dark-green;
+    overflow: hidden;
+    border: none;
+}
+
+.digital-nav-sub::after {
+    content: "";
+    height: 45px;
+    width: 2000px;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    background: $dark-green;
+    overflow: hidden;
+    border: none;
+}
+
+.cyber-nav-sub::before {
+    content: "";
+    height: 45px;
+    width: 500px;
+    position: absolute;
+    top: 0;
+    right: 100%;
+    background: $dark-pink;
+    overflow: hidden;
+    border: none;
+}
+
+.cyber-nav-sub::after {
+    content: "";
+    height: 45px;
+    width: 2000px;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    background: $dark-pink;
+    overflow: hidden;
+    border: none;
+}
+
+// Nav Hover //
+
+.web-nav {
+    &:hover {
+        background: $purple;
+        .web-nav-icon {
+            color: white;
+        }
+        .web-nav-sub {
+            display: flex;
+        }
+    }
+}
+
+.support-nav {
+    &:hover {
+        background: $light-blue;
+        .support-nav-icon {
+            color: white;
+        }
+        .support-nav-sub {
+            display: flex;
+        }
+    }
+}
+
+.tele-nav {
+    &:hover {
+        background: $red;
+        .tele-nav-icon {
+            color: white;
+        }
+        .tele-nav-sub {
+            display: flex;
+        }
+    }
+}
+
+.software-nav {
+    &:hover {
+        background: $grey-blue;
+        .software-nav-icon {
+            color: white;
+        }
+        .software-nav-sub {
+            display: flex;
+        }
+    }
+}
+
+.digital-nav {
+    &:hover {
+        background: $green;
+        .digital-nav-icon {
+            color: white;
+        }
+        .digital-nav-sub {
+            display: flex;
+        }
+    }
+}
+
+.cyber-nav {
+    &:hover {
+        background: $hot-pink;
+        .cyber-nav-icon {
+            color: white;
+        }
+        .cyber-nav-sub {
+            display: flex;
+        }
+    }
+}

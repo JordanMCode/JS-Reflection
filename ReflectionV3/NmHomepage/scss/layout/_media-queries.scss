@@ -1,0 +1,678 @@
+@media screen and (max-width: 475px) {
+    .header-logo {
+        margin-right: 15px;
+    }
+
+    .phone {
+        padding-right: 0;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .news-block-2,
+    .news-block-3 {
+        margin-top: 30px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .header-container {
+        align-items: center;
+        flex-wrap: nowrap;
+        margin: 0;
+    }
+
+    .header-logo {
+        width: 364px;
+        height: 70px;
+    }
+
+    .phone {
+        display: none;
+    }
+
+    .menu {
+        order: 2;
+    }
+
+    .search-bar-mobile {
+        display: none;
+    }
+
+    .search-bar {
+        order: 1;
+        height: 56px;
+        width: 237px;
+        margin: 0;
+    }
+
+    .search {
+        display: flex;
+        height: 56px;
+        width: 174px;
+        margin: 0;
+    }
+
+    .search-icon-mobile {
+        display: none;
+    }
+
+    .search-icon-md {
+        display: flex;
+        position: absolute;
+        top: 5px;
+        right: -2px;
+        color: white;
+    }
+
+    .search-btn {
+        display: block;
+        width: 63px;
+    }
+
+    .actions {
+        order: 3;
+    }
+
+    .carousel-text {
+        width: 720px;
+        justify-content: flex-start;
+        text-align: center;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+
+    .carousel p {
+        margin: 0 0 50px 0;
+        line-height: 2.25rem;
+    }
+
+    .carousel h1 {
+        margin-bottom: 20px;
+    }
+
+    .cards {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        max-width: 750px;
+    }
+
+    .card-column-1 {
+        max-width: 720px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .card-column-2 {
+        width: 345px;
+        height: 345px;
+        margin: 30px auto 0 auto;
+    }
+
+    .latest-bar {
+        width: 750px;
+        max-width: 750px;
+        padding: 0;
+    }
+
+    .news {
+        flex-direction: row;
+        justify-content: space-between;
+        height: 100%;
+        max-width: 750px;
+        margin: 0 auto;
+    }
+
+    .news-block-1,
+    .news-block-2 {
+        width: 50%;
+        max-width: 345px;
+    }
+
+    .news-block-1 {
+        margin-right: 15px;
+    }
+
+    .news-block-2 {
+        margin-left: 15px;
+    }
+
+    .news-block-3 {
+        display: none;
+    }
+
+    .sponsors {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        padding: 50px 0;
+        height: 170px;
+        width: 750px;
+        max-width: 750px;
+    }
+
+    .brand-container {
+        display: flex;
+        align-content: center;
+        justify-content: space-between;
+    }
+
+    .footer-container {
+        flex-direction: row;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        width: 750px;
+    }
+
+    .footer-block {
+        width: 50%;
+    }
+
+    .social-block {
+        max-height: 55px;
+    }
+
+    .linked {
+        margin-top: 5px;
+    }
+
+    .accred {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .header-container {
+        max-width: 970px;
+        margin: 0 auto;
+    }
+
+    .header-logo {
+        width: 404px;
+        padding: 0 15px;
+        margin: 0;
+    }
+
+    .actions {
+        justify-content: flex-end;
+        width: 565px;
+        padding: 0 15px;
+        margin: 0;
+    }
+
+    .search-icon-lg {
+        position: absolute;
+        top: 15px;
+        right: 17px;
+        color: white;
+    }
+
+    .search-icon-md {
+        top: 1px;
+        right: 0;
+        color: white;
+    }
+
+    .search-btn-lg {
+        display: flex;
+        position: relative;
+    }
+
+    .search-bar {
+        display: none;
+    }
+
+    .support-btn,
+    .contact-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .carousel {
+        flex-direction: row;
+        justify-content: flex-start;
+        height: 80vh;
+    }
+
+    .carousel-text {
+        justify-content: flex-start;
+        text-align: start;
+        margin: 0 auto;
+        width: 970px;
+        padding: 0 15px;
+    }
+
+    .carousel-btn {
+        margin: 0;
+    }
+
+    .cards {
+        width: 920px;
+        max-width: 920px;
+    }
+
+    .card {
+        padding: 15px 30px;
+    }
+
+    .card-column-1 {
+        width: 293.33px;
+        height: 356px;
+        margin: 0;
+        padding: 5px 30px 15px 30px;
+    }
+
+    .card-column-2 {
+        width: 440px;
+        height: 290px;
+        margin: 30px 0 0 0;
+    }
+
+    .info-container,
+    .info-container-inner {
+        justify-content: flex-start;
+        width: 970px;
+        max-width: 970px;
+        background: none;
+    }
+
+    .info-container-background {
+        background-image: url(/NmHomepage/img/netmatters-logo-background.png);
+        background-position: 100%;
+        background-repeat: no-repeat;
+        background-size: auto 100%;
+    }
+
+    .latest-bar {
+        width: 970px;
+        max-width: 970px;
+        padding: 0;
+    }
+
+    .news {
+        width: 970px;
+        max-width: 970px;
+    }
+
+    .news-block-1,
+    .news-block-2 {
+        width: 485px;
+        height: 600px;
+        max-width: 485px;
+    }
+
+    .sponsors {
+        width: 970px;
+        max-width: 970px;
+    }
+
+    .news-img {
+        transition: transform 0.15s ease-in-out;
+    }
+
+    .news-img:hover {
+        transform: scale(1.1);
+    }
+
+    .bus {
+        width: 168.75px;
+    }
+
+    .beat {
+        width: 64.63px;
+    }
+
+    .crane {
+        width: 257.61px;
+    }
+
+    .northern {
+        width: 289.02px;
+    }
+
+    .brand-logo {
+        height: 100%;
+    }
+
+    .brand-container {
+        width: 970px;
+        max-width: 970px;
+        height: 62.83px;
+    }
+
+    .bus-tooltip {
+        width: 240px;
+        top: -216px;
+        left: -20px;
+    }
+
+    .crane-tooltip {
+        width: 250px;
+        top: -305px;
+        left: 0;
+    }
+
+    .beat-tooltip {
+        width: 200px;
+        top: -217px;
+        left: -70px;
+    }
+
+    .northern-tooltip {
+        width: 300px;
+        top: -246px;
+        left: 25px;
+    }
+
+    .accred {
+        height: 210.9px;
+    }
+
+    .accred-imgs {
+        width: 970px;
+        max-width: 970px;
+        max-height: 110px;
+        height: 110px;
+    }
+
+    .micro {
+        width: 140.2px;
+        height: 85.33px;
+    }
+
+    .f-50 {
+        width: 69.2px;
+        height: 110.09px;
+    }
+
+    .qms {
+        width: 85.2px;
+        height: 99.39px;
+    }
+
+    .carbon {
+        width: 202.2px;
+        height: 80.08px;
+    }
+
+    .footer-container {
+        width: 970px;
+        max-width: 970px;
+    }
+}
+
+@media screen and (min-width: 1260px) {
+    .header-container {
+        width: 1200px;
+        max-width: 1200px;
+    }
+
+    .actions {
+        width: 800px;
+        height: 70px;
+    }
+
+    .search-btn-lg {
+        display: none;
+    }
+
+    .search-bar {
+        display: flex;
+        margin-left: 20px;
+        width: 296px;
+    }
+
+    .search-icon-md {
+        top: 4px;
+        right: -3px;
+    }
+
+    .search {
+        width: 240px;
+    }
+
+    .main-nav-container {
+        width: 1230px;
+        max-width: 1230px;
+    }
+
+    .web-nav,
+    .support-nav,
+    .tele-nav,
+    .software-nav,
+    .digital-nav,
+    .cyber-nav {
+        width: 192.67px;
+    }
+
+    .nav-sub-text {
+        width: 1170px;
+    }
+
+    .dash {
+        margin-left: 50px;
+    }
+
+    .dash-lg {
+        margin-left: 100px;
+    }
+
+    .carousel-text {
+        width: 1200px;
+        padding: 0 15px;
+    }
+
+    .cards {
+        width: 1200px;
+        max-width: 1200px;
+    }
+
+    .card-column-1 {
+        width: 380px;
+        height: 312px;
+    }
+
+    .card-column-2 {
+        width: 275px;
+        height: 312px;
+    }
+
+    .info-container {
+        justify-content: start;
+        width: 1200px;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding-left: 0;
+    }
+
+    .info-container-inner {
+        width: 600px;
+        padding-left: 0;
+    }
+
+    .latest-bar {
+        width: 1200px;
+        max-width: 1200px;
+        padding: 0;
+    }
+
+    .news {
+        width: 1200px;
+        max-width: 1200px;
+    }
+
+    .news-block-3 {
+        display: block;
+        margin-left: 30px;
+    }
+
+    .news-block-1,
+    .news-block-2,
+    .news-block-3 {
+        width: 370px;
+        height: 618.86px;
+    }
+
+    .news-text {
+        width: 370px;
+        height: 370px;
+    }
+
+    .sponsor-wrap {
+        display: flex;
+        align-content: center;
+    }
+
+    .brand-container,
+    .sponsors {
+        width: 1200px;
+        max-width: 1200px;
+        justify-content: space-around;
+    }
+
+    .brand-container {
+        height: 70px;
+    }
+
+    .bus {
+        width: 188px;
+    }
+
+    .crane {
+        width: 287px;
+    }
+
+    .beat {
+        width: 72px;
+    }
+
+    .northern {
+        width: 322px;
+    }
+
+    footer {
+        height: 309px;
+        padding: 47px 0 43px;
+        display: flex;
+    }
+
+    .footer-container {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        width: 1200px;
+        max-width: 1200px;
+        padding: 0;
+    }
+
+    .footer-block {
+        width: 300px;
+    }
+
+    .social-blocks {
+        height: auto;
+    }
+
+    .linked {
+        margin-top: 24px;
+    }
+
+    .accred-imgs {
+        width: 1200px;
+        max-width: 1200px;
+    }
+
+    .micro {
+        width: 115px;
+        height: 70px;
+    }
+
+    .f-50 {
+        width: 44px;
+        height: 70px;
+    }
+
+    .qms {
+        width: 60px;
+        height: 70px;
+    }
+
+    .carbon {
+        width: 175px;
+        height: 70px;
+    }
+}
+
+@media (max-width: 768px) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .ie-fix {
+        width: 100%;
+    }
+}
+
+@media (min-width: 768px) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .search-btn {
+        width: 64px;
+    }
+
+    .web-nav,
+    .support-nav,
+    .tele-nav,
+    .software-nav,
+    .digital-nav,
+    .cyber-nav {
+        padding: 4px 0 0 0;
+    }
+
+    .carousel-text {
+        width: auto;
+        text-align: left;
+    }
+
+    .card {
+        display: flex;
+        padding: 30px 32px;
+        height: auto;
+    }
+
+    .it-card {
+        padding: 40px 32px;
+    }
+
+    .ie-fix {
+        width: 100%;
+    }
+
+    .card p {
+        margin-bottom: 20px;
+    }
+
+    a {
+        cursor: pointer;
+    }
+}
+
+@media (min-width: 992px) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .carousel-text {
+        width: 970px;
+        padding-left: 30px;
+    }
+}
+
+@media (min-width: 1260px) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .carousel-text {
+        width: 1200px;
+        padding-left: 25px;
+    }
+}

@@ -1,0 +1,405 @@
+:any-link {
+    cursor: pointer;
+}
+
+// =============================================================================//
+// Header Button Hover states //
+// =============================================================================//
+
+.support-btn:hover {
+    background: #2a6ec6;
+    border-color: #2665b5;
+}
+
+.contact-btn:hover {
+    background: #84858f;
+    border-color: #797a85;
+}
+
+.search-btn,
+.search-btn-lg {
+    &:hover {
+        background: #7e808a;
+    }
+}
+
+.menu:hover {
+    background: #22242e;
+    border-color: #191a22;
+}
+
+.web-nav,
+.support-nav,
+.tele-nav,
+.software-nav,
+.digital-nav,
+.cyber-nav {
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+// =============================================================================//
+// Carousel button Hover states //
+// =============================================================================//
+
+#carousel-btn-1:hover {
+    background: $nm-purple-dark;
+    border-color: $nm-purple-dark;
+}
+
+#carousel-btn-2:hover {
+    background: $slate-blue;
+    border-color: $slate-blue;
+}
+
+#carousel-btn-3:hover {
+    background: $dark-green;
+    border-color: $dark-green;
+}
+
+#carousel-btn-4:hover {
+    background: $dark-red;
+    border-color: $dark-red;
+}
+
+#carousel-btn-5:hover {
+    background: $nm-purple-dark;
+    border-color: $nm-purple-dark;
+}
+#carousel-btn-6:hover {
+    background: $dark-pink;
+    border-color: $dark-pink;
+}
+// =============================================================================//
+// Card Hover states //
+// =============================================================================//
+
+.software-card {
+    &:hover {
+        p {
+            color: white;
+        }
+        h2 {
+            color: white;
+        }
+        .apps {
+            color: $grey-blue;
+        }
+        .icon {
+            background: white;
+        }
+        h2::after {
+            background: white;
+        }
+        .app-btn {
+            color: $grey-blue;
+            background: white;
+            border-color: white;
+        }
+    }
+}
+
+.software-card:hover {
+    background: $grey-blue;
+}
+
+.it-card {
+    &:hover {
+        p {
+            color: white;
+        }
+        h2 {
+            color: white;
+        }
+        .it {
+            color: $light-blue;
+        }
+        .icon {
+            background: white;
+        }
+        h2::after {
+            background: white;
+        }
+        .it-btn {
+            color: $light-blue;
+            background: white;
+            border-color: white;
+        }
+    }
+}
+
+.it-card:hover {
+    background: $light-blue;
+}
+
+.digital-card {
+    &:hover {
+        p {
+            color: white;
+        }
+        h2 {
+            color: white;
+        }
+        .digital-m {
+            color: $green;
+        }
+        .icon {
+            background: white;
+        }
+        h2::after {
+            background: white;
+        }
+        .digital-btn {
+            color: $green;
+            background: white;
+            border-color: white;
+        }
+    }
+}
+
+.digital-card:hover {
+    background: $green;
+}
+
+.tele-card {
+    &:hover {
+        p {
+            color: white;
+        }
+        h2 {
+            color: white;
+        }
+        .tele-c {
+            color: $red;
+        }
+        .icon {
+            background: white;
+        }
+        h2::after {
+            background: white;
+        }
+        .tele-btn {
+            color: $red;
+            background: white;
+            border-color: white;
+        }
+    }
+}
+
+.tele-card:hover {
+    background: $red;
+}
+
+.web-card {
+    &:hover {
+        p {
+            color: white;
+        }
+        h2 {
+            color: white;
+        }
+        .web {
+            color: $purple;
+        }
+        .icon {
+            background: white;
+        }
+        h2::after {
+            background: white;
+        }
+        .web-btn {
+            color: $purple;
+            background: white;
+            border-color: white;
+        }
+    }
+}
+
+.web-card:hover {
+    background: $purple;
+}
+
+.cyber-card {
+    &:hover {
+        p {
+            color: white;
+        }
+        h2 {
+            color: white;
+        }
+        .cyber {
+            color: $hot-pink;
+        }
+        .icon {
+            background: white;
+        }
+        h2::after {
+            background: white;
+        }
+        .cyber-btn {
+            color: $hot-pink;
+            background: white;
+            border-color: white;
+        }
+    }
+}
+
+.cyber-card:hover {
+    background: $hot-pink;
+}
+
+.dev-card {
+    &:hover {
+        p {
+            color: white;
+        }
+        h2 {
+            color: white;
+        }
+        .dev-t {
+            color: $purple;
+        }
+        .icon {
+            background: white;
+        }
+        h2::after {
+            background: white;
+        }
+        .dev-btn {
+            color: $purple;
+            background: white;
+            border-color: white;
+        }
+    }
+}
+
+.dev-card:hover {
+    background: $purple;
+}
+
+// =============================================================================//
+//  Info Section Hover States //
+// =============================================================================//
+
+.culture-btn:hover {
+    background: #ebebeb;
+    border-color: #e0e0e0;
+}
+
+// =============================================================================//
+//  News Hover States //
+// =============================================================================//
+
+.news-title:hover {
+    text-decoration: underline;
+}
+
+.case-title:hover {
+    text-decoration: underline;
+}
+
+.news-tag-1,
+.news-tag-2,
+.case-tag {
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.news-tag-1:hover .news-tooltip-1 {
+    display: block;
+}
+
+.news-tag-2:hover .news-tooltip-2 {
+    display: block;
+}
+
+.case-tag:hover .case-tooltip {
+    display: block;
+}
+
+.news-btn:hover {
+    background: #2a6ec6;
+    border-color: #2665b5;
+}
+
+.case-btn:hover {
+    background: #7e57a0;
+    border-color: #735093;
+}
+
+// =============================================================================//
+//  Sponsor Hover States //
+// =============================================================================//
+
+.bus:hover {
+    background-image: url(../img/bus-color.png);
+}
+
+.bus:hover .bus-tooltip {
+    display: block;
+}
+
+.crane:hover {
+    background-image: url(../img/crane-color.png);
+}
+.crane:hover .crane-tooltip {
+    display: block;
+}
+
+.beat:hover {
+    background-image: url(../img/beat-color.png);
+}
+.beat:hover .beat-tooltip {
+    display: block;
+}
+
+.northern:hover {
+    background-image: url(../img/nd-color.png);
+}
+.northern:hover .northern-tooltip {
+    display: block;
+}
+
+// =============================================================================//
+//  Accred Hover States //
+// =============================================================================//
+
+.f-50:hover {
+    background-image: url(../img/f50-color.jpeg);
+}
+
+.qms:hover {
+    background-image: url(../img/qms-color.jpeg);
+}
+
+.carbon:hover {
+    background-image: url(../img/carbon-color.jpeg);
+}
+
+// =============================================================================//
+//  Footer Hover States //
+// =============================================================================//
+
+.facebook:hover {
+    background: #4267b2;
+}
+
+.twitter:hover {
+    background: #1da1f2;
+}
+
+.linked:hover {
+    background: #0072b1;
+}
+
+// Hover states below serve to simulate a clickable link hover state if they included and href //
+
+a li:hover {
+    text-decoration: underline;
+}
+
+li a:hover {
+    text-decoration: underline;
+}
