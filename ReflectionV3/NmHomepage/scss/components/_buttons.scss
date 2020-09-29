@@ -1,0 +1,141 @@
+.menu {
+    background: #333645;
+    color: white;
+    width: auto;
+    height: 56px;
+    padding: 5px 15px;
+    margin-left: 20px;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 0.75rem;
+}
+
+.search-btn {
+    height: 56px;
+    width: 100%;
+    background: #999aa2;
+    border-radius: 0 3px 3px 0;
+    border: none;
+}
+
+.carousel-btn {
+    background: $purple;
+    border: 1px solid $purple;
+    border-radius: 3px;
+    min-width: 128px;
+    min-height: 47px;
+    padding: 15px 15px;
+    text-transform: uppercase;
+    color: white;
+    line-height: 35px;
+    text-align: center;
+    font-size: 1.25rem;
+    margin: 0 auto;
+    font-weight: 400;
+}
+
+.card-btn {
+    background: #4183d7;
+    border: 1px solid;
+    border-radius: 3px;
+    width: 128px;
+    height: 47px;
+    padding: 5px;
+    text-transform: uppercase;
+    color: white;
+    line-height: 35px;
+    text-align: center;
+    font-size: 1.063rem;
+}
+
+.culture-btn {
+    background: white;
+    border: 1px solid white;
+    border-radius: 3px;
+    min-width: 128px;
+    min-height: 47px;
+    padding: 10px 15px;
+    text-transform: uppercase;
+    color: #333645;
+    line-height: 35px;
+    text-align: center;
+    font-size: 1.063rem;
+    font-weight: 400;
+}
+
+.news-btn {
+    background: #4183d7;
+    border: 1px solid #4183d7;
+    border-radius: 3px;
+    min-width: 128px;
+    min-height: 47px;
+    padding: 10px 15px;
+    text-transform: uppercase;
+    color: white;
+    line-height: 35px;
+    text-align: center;
+    font-size: 1.063rem;
+    font-weight: 400;
+}
+
+.case-btn {
+    background: $purple;
+    border-color: $purple;
+}
+
+.app-btn {
+    background: $grey-blue;
+}
+
+.digital-btn {
+    background: $green;
+}
+
+.tele-btn {
+    background: $red;
+}
+
+.web-btn {
+    background: $purple;
+}
+
+.cyber-btn {
+    background: $hot-pink;
+}
+
+.dev-btn {
+    background: $purple;
+}
+
+#carousel-btn-1 {
+    background: $purple;
+    border-color: $purple;
+}
+
+#carousel-btn-2 {
+    background: $grey-blue;
+    border-color: $grey-blue;
+}
+
+#carousel-btn-3 {
+    background: $green;
+    border-color: $green;
+}
+
+#carousel-btn-4 {
+    background: $red;
+    border-color: $red;
+}
+
+#carousel-btn-5 {
+    background: $purple;
+    border-color: $purple;
+}
+
+#carousel-btn-6 {
+    background: $hot-pink;
+    border-color: $hot-pink;
+}

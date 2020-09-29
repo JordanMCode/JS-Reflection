@@ -1,0 +1,88 @@
+.phone {
+    color: #333645;
+    height: 71px;
+    max-width: 70px;
+    display: inline-flex;
+    align-items: center;
+    padding-right: 25px;
+}
+
+.icon {
+    height: 60px;
+    width: 60px;
+    margin: 0 auto 0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa-mouse,
+.fa-paper-plane {
+    margin-right: 12px;
+}
+
+.apps,
+.it,
+.digital-m,
+.tele-c,
+.web,
+.cyber,
+.dev-t {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.app-icon {
+    background: $grey-blue;
+}
+.it {
+    background: #4183d7;
+}
+.digital-m {
+    background: #2ecc71;
+}
+.tele-c {
+    background: #d64541;
+}
+.web {
+    background: #926fb1;
+}
+.cyber {
+    background: #f62459;
+}
+.dev-t {
+    background: #926fb1;
+}
+
+.web-nav-icon {
+    color: $purple;
+    padding-bottom: 10px;
+}
+
+.support-nav-icon {
+    color: $light-blue;
+    padding-bottom: 10px;
+}
+
+.tele-nav-icon {
+    color: $red;
+    padding-bottom: 10px;
+}
+
+.software-nav-icon {
+    color: $grey-blue;
+    padding-bottom: 10px;
+}
+
+.digital-nav-icon {
+    color: $green;
+    padding-bottom: 10px;
+}
+
+.cyber-nav-icon {
+    color: $hot-pink;
+    padding-bottom: 10px;
+}

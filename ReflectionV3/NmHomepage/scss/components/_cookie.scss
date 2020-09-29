@@ -1,0 +1,69 @@
+.cookie-bg {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    background: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    z-index: 19;
+    top: 0;
+    left: 0;
+}
+
+.cookie-popup {
+    width: 600px;
+    height: fit-content;
+    border-radius: 5px;
+    position: absolute;
+    top: 200px;
+    left: 30%;
+    background: white;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+
+    & h3 {
+        font-size: 1.625rem;
+        font-weight: 400;
+        margin-top: 0;
+        margin-bottom: 0;
+        border-bottom: 1px solid #e5e5e5;
+        padding: 15px 20px;
+    }
+
+    & p {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}
+
+.cookie-text {
+    padding: 20px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.cookie-btns {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.decline-cookie,
+.accept-cookie {
+    background: $grey;
+    border: 1px solid $grey;
+    border-radius: 3px;
+    min-width: 128px;
+    min-height: 47px;
+    text-transform: uppercase;
+    color: white;
+    line-height: 35px;
+    text-align: center;
+    font-size: 1.063rem;
+    font-weight: 400;
+    margin-right: 15px;
+    width: 100%;
+}
+
+.accept-cookie {
+    background: $purple;
+    border: 1px solid $purple;
+    margin-left: 15px;
+}
