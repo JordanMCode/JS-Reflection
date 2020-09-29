@@ -77,9 +77,11 @@ a {
 /* line 65, C:/Users/Jordan/Desktop/Code-Projects/JS-Reflection/ReflectionV3/NmHomepage/scss/base/_base.scss */
 .open {
   margin-right: 250px;
+  transition: transform 0.5s cubic-bezier(0.16, 0.68, 0.43, 0.99);
+  transition: visibility 0.5s cubic-bezier(0.16, 0.68, 0.43, 0.99);
 }
 
-/* line 69, C:/Users/Jordan/Desktop/Code-Projects/JS-Reflection/ReflectionV3/NmHomepage/scss/base/_base.scss */
+/* line 71, C:/Users/Jordan/Desktop/Code-Projects/JS-Reflection/ReflectionV3/NmHomepage/scss/base/_base.scss */
 .sb-class {
   position: absolute;
   right: 350px;
@@ -1151,19 +1153,260 @@ li a:hover {
   border: 2px solid #fff;
 }
 
-/* line 1, C:/Users/Jordan/Desktop/Code-Projects/JS-Reflection/ReflectionV3/NmHomepage/scss/components/_pushy.scss */
+/*! Pushy - v1.3.0 - 2019-6-25
+* Pushy is a responsive off-canvas navigation menu using CSS transforms & transitions.
+* https://github.com/christophery/pushy/
+* by Christopher Yee */
+/* Menu Appearance */
+/* line 10, C:/Users/Jordan/Desktop/Code-Projects/JS-Reflection/ReflectionV3/NmHomepage/scss/components/_pushy.scss */
+.pushy {
+  position: fixed;
+  width: 350px;
+  height: 100%;
+  top: 0;
+  z-index: 9999;
+  background: #191918;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  /* enables momentum scrolling in iOS overflow elements */
+}
+
+/* line 20, C:/Users/Jordan/Desktop/Code-Projects/JS-Reflection/ReflectionV3/NmHomepage/scss/components/_pushy.scss */
+.pushy a {
+  display: block;
+  color: #b3b3b1;
+  padding: 15px 30px;
+  text-decoration: none;
+}
+
+/* line 27, C:/Users/Jordan/Desktop/Code-Projects/JS-Reflection/ReflectionV3/NmHomepage/scss/components/_pushy.scss */
+.pushy a:hover {
+  color: #fff;
+}
+
+/* line 31, C:/Users/Jordan/Desktop/Code-Projects/JS-Reflection/ReflectionV3/NmHomepage/scss/components/_pushy.scss */
+.pushy ul:first-child {
+  margin-top: 10px;
+}
+
+/* line 35, C:/Users/Jordan/Desktop/Code-Projects/JS-Reflection/ReflectionV3/NmHomepage/scss/components/_pushy.scss */
+.pushy.pushy-left {
+  left: 0;
+}
+
+/* line 39, C:/Users/Jordan/Desktop/Code-Projects/JS-Reflection/ReflectionV3/NmHomepage/scss/components/_pushy.scss */
+.pushy.pushy-right {
+  right: 0;
+}
+
+/* line 44, C:/Users/Jordan/Desktop/Code-Projects/JS-Reflection/ReflectionV3/NmHomepage/scss/components/_pushy.scss */
+.pushy-content {
+  visibility: hidden;
+}
+
+/* Menu Movement */
+/* line 50, C:/Users/Jordan/Desktop/Code-Projects/JS-Reflection/ReflectionV3/NmHomepage/scss/components/_pushy.scss */
+.pushy-left {
+  -webkit-transform: translate3d(-350px, 0, 0);
+  -ms-transform: translate3d(-350px, 0, 0);
+  transform: translate3d(-350px, 0, 0);
+}
+
+/* line 57, C:/Users/Jordan/Desktop/Code-Projects/JS-Reflection/ReflectionV3/NmHomepage/scss/components/_pushy.scss */
+.pushy-open-left #container,
+.pushy-open-left .push {
+  -webkit-transform: translate3d(350px, 0, 0);
+  -ms-transform: translate3d(350px, 0, 0);
+  transform: translate3d(350px, 0, 0);
+}
+
+/* line 65, C:/Users/Jordan/Desktop/Code-Projects/JS-Reflection/ReflectionV3/NmHomepage/scss/components/_pushy.scss */
+.pushy-right {
+  -webkit-transform: translate3d(350px, 0, 0);
+  -ms-transform: translate3d(350px, 0, 0);
+  transform: translate3d(350px, 0, 0);
+}
+
+/* line 72, C:/Users/Jordan/Desktop/Code-Projects/JS-Reflection/ReflectionV3/NmHomepage/scss/components/_pushy.scss */
+.pushy-open-right #container,
+.pushy-open-right .push {
+  -webkit-transform: translate3d(-350px, 0, 0);
+  -ms-transform: translate3d(-350px, 0, 0);
+  transform: translate3d(-350px, 0, 0);
+}
+
+/* line 82, C:/Users/Jordan/Desktop/Code-Projects/JS-Reflection/ReflectionV3/NmHomepage/scss/components/_pushy.scss */
+.pushy-open-left .pushy,
+.pushy-open-right .pushy {
+  -webkit-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+/* line 88, C:/Users/Jordan/Desktop/Code-Projects/JS-Reflection/ReflectionV3/NmHomepage/scss/components/_pushy.scss */
+.pushy-open-left .pushy-content,
+.pushy-open-right .pushy-content {
+  visibility: visible;
+}
+
+/* Menu Transitions */
+/* line 95, C:/Users/Jordan/Desktop/Code-Projects/JS-Reflection/ReflectionV3/NmHomepage/scss/components/_pushy.scss */
+#container,
+.pushy,
+.push {
+  transition: transform 0.2s cubic-bezier(0.16, 0.68, 0.43, 0.99);
+}
+
+/* line 101, C:/Users/Jordan/Desktop/Code-Projects/JS-Reflection/ReflectionV3/NmHomepage/scss/components/_pushy.scss */
+.pushy-content {
+  transition: visibility 0.2s cubic-bezier(0.16, 0.68, 0.43, 0.99);
+}
+
+/* Site Overlay */
+/* line 107, C:/Users/Jordan/Desktop/Code-Projects/JS-Reflection/ReflectionV3/NmHomepage/scss/components/_pushy.scss */
+.site-overlay {
+  display: none;
+}
+
+/* line 113, C:/Users/Jordan/Desktop/Code-Projects/JS-Reflection/ReflectionV3/NmHomepage/scss/components/_pushy.scss */
+.pushy-open-left .site-overlay,
+.pushy-open-right .site-overlay {
+  display: block;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 9998;
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-animation: fade 500ms;
+  animation: fade 500ms;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Submenu Appearance */
+/* line 147, C:/Users/Jordan/Desktop/Code-Projects/JS-Reflection/ReflectionV3/NmHomepage/scss/components/_pushy.scss */
+.pushy-submenu {
+  /* Submenu Buttons */
+  /* Submenu Icon */
+}
+
+/* line 148, C:/Users/Jordan/Desktop/Code-Projects/JS-Reflection/ReflectionV3/NmHomepage/scss/components/_pushy.scss */
+.pushy-submenu > ul {
+  padding-left: 15px;
+  transition: max-height 0.4s ease-in-out, visibility 0.4s ease-in-out;
+}
+
+/* line 152, C:/Users/Jordan/Desktop/Code-Projects/JS-Reflection/ReflectionV3/NmHomepage/scss/components/_pushy.scss */
+.pushy-submenu > ul .pushy-link {
+  transition: opacity 0.2s ease-in-out;
+}
+
+/* line 159, C:/Users/Jordan/Desktop/Code-Projects/JS-Reflection/ReflectionV3/NmHomepage/scss/components/_pushy.scss */
+.pushy-submenu button {
+  width: 100%;
+  color: #b3b3b1;
+  padding: 15px 30px;
+  text-align: left;
+  background: transparent;
+  border: 0;
+}
+
+/* line 167, C:/Users/Jordan/Desktop/Code-Projects/JS-Reflection/ReflectionV3/NmHomepage/scss/components/_pushy.scss */
+.pushy-submenu button:hover {
+  color: #fff;
+}
+
+/* line 174, C:/Users/Jordan/Desktop/Code-Projects/JS-Reflection/ReflectionV3/NmHomepage/scss/components/_pushy.scss */
+.pushy-submenu > a,
+.pushy-submenu > button {
+  position: relative;
+}
+
+/* line 179, C:/Users/Jordan/Desktop/Code-Projects/JS-Reflection/ReflectionV3/NmHomepage/scss/components/_pushy.scss */
+.pushy-submenu > a::after,
+.pushy-submenu > button::after {
+  content: "";
+  display: block;
+  height: 11px;
+  width: 8px;
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  background: url("../img/arrow.svg") no-repeat;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  transition: transform 0.2s;
+}
+
+/* Submenu Movement */
+/* line 199, C:/Users/Jordan/Desktop/Code-Projects/JS-Reflection/ReflectionV3/NmHomepage/scss/components/_pushy.scss */
+.pushy-submenu-closed > ul {
+  max-height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+/* line 205, C:/Users/Jordan/Desktop/Code-Projects/JS-Reflection/ReflectionV3/NmHomepage/scss/components/_pushy.scss */
+.pushy-submenu-closed .pushy-link {
+  opacity: 0;
+}
+
+/* line 210, C:/Users/Jordan/Desktop/Code-Projects/JS-Reflection/ReflectionV3/NmHomepage/scss/components/_pushy.scss */
+.pushy-submenu-open {
+  /* Submenu Icon */
+}
+
+/* line 211, C:/Users/Jordan/Desktop/Code-Projects/JS-Reflection/ReflectionV3/NmHomepage/scss/components/_pushy.scss */
+.pushy-submenu-open > ul {
+  max-height: 1000px;
+  visibility: visible;
+}
+
+/* line 216, C:/Users/Jordan/Desktop/Code-Projects/JS-Reflection/ReflectionV3/NmHomepage/scss/components/_pushy.scss */
+.pushy-submenu-open .pushy-link {
+  opacity: 1;
+}
+
+/* line 222, C:/Users/Jordan/Desktop/Code-Projects/JS-Reflection/ReflectionV3/NmHomepage/scss/components/_pushy.scss */
+.pushy-submenu-open > a::after,
+.pushy-submenu-open > button::after {
+  -webkit-transform: translateY(-50%) rotate(90deg);
+  -ms-transform: translateY(-50%) rotate(90deg);
+  transform: translateY(-50%) rotate(90deg);
+}
+
+/* line 1, C:/Users/Jordan/Desktop/Code-Projects/JS-Reflection/ReflectionV3/NmHomepage/scss/components/_pushy-edits.scss */
 .pushy {
   background-color: #333645;
 }
 
 @media screen and (min-width: 992px) {
-  /* line 5, C:/Users/Jordan/Desktop/Code-Projects/JS-Reflection/ReflectionV3/NmHomepage/scss/components/_pushy.scss */
+  /* line 5, C:/Users/Jordan/Desktop/Code-Projects/JS-Reflection/ReflectionV3/NmHomepage/scss/components/_pushy-edits.scss */
   .pushy-mob-menu {
     display: none;
   }
 }
 
-/* line 10, C:/Users/Jordan/Desktop/Code-Projects/JS-Reflection/ReflectionV3/NmHomepage/scss/components/_pushy.scss */
+/* line 10, C:/Users/Jordan/Desktop/Code-Projects/JS-Reflection/ReflectionV3/NmHomepage/scss/components/_pushy-edits.scss */
 .pushy-mob-menu .top-sub {
   text-align: center;
   outline: 1px solid rgba(0, 0, 0, 0.25);
@@ -1176,12 +1419,12 @@ li a:hover {
   padding-top: 5px;
 }
 
-/* line 22, C:/Users/Jordan/Desktop/Code-Projects/JS-Reflection/ReflectionV3/NmHomepage/scss/components/_pushy.scss */
+/* line 22, C:/Users/Jordan/Desktop/Code-Projects/JS-Reflection/ReflectionV3/NmHomepage/scss/components/_pushy-edits.scss */
 .pushy-mob-menu .top-sub:hover {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-/* line 26, C:/Users/Jordan/Desktop/Code-Projects/JS-Reflection/ReflectionV3/NmHomepage/scss/components/_pushy.scss */
+/* line 26, C:/Users/Jordan/Desktop/Code-Projects/JS-Reflection/ReflectionV3/NmHomepage/scss/components/_pushy-edits.scss */
 .pushy-mob-menu .nav-button {
   margin: auto;
   width: 216px;
@@ -1192,107 +1435,107 @@ li a:hover {
   border-radius: 3px;
 }
 
-/* line 35, C:/Users/Jordan/Desktop/Code-Projects/JS-Reflection/ReflectionV3/NmHomepage/scss/components/_pushy.scss */
+/* line 35, C:/Users/Jordan/Desktop/Code-Projects/JS-Reflection/ReflectionV3/NmHomepage/scss/components/_pushy-edits.scss */
 .pushy-mob-menu .nav-button p:first-of-type {
   font-size: 10px;
 }
 
-/* line 39, C:/Users/Jordan/Desktop/Code-Projects/JS-Reflection/ReflectionV3/NmHomepage/scss/components/_pushy.scss */
+/* line 39, C:/Users/Jordan/Desktop/Code-Projects/JS-Reflection/ReflectionV3/NmHomepage/scss/components/_pushy-edits.scss */
 .pushy-mob-menu .nav-button:hover {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-/* line 44, C:/Users/Jordan/Desktop/Code-Projects/JS-Reflection/ReflectionV3/NmHomepage/scss/components/_pushy.scss */
+/* line 44, C:/Users/Jordan/Desktop/Code-Projects/JS-Reflection/ReflectionV3/NmHomepage/scss/components/_pushy-edits.scss */
 .pushy-mob-menu .nav-bar-web i {
   color: #926fb1;
 }
 
-/* line 49, C:/Users/Jordan/Desktop/Code-Projects/JS-Reflection/ReflectionV3/NmHomepage/scss/components/_pushy.scss */
+/* line 49, C:/Users/Jordan/Desktop/Code-Projects/JS-Reflection/ReflectionV3/NmHomepage/scss/components/_pushy-edits.scss */
 .pushy-mob-menu .nav-bar-web:hover {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-/* line 52, C:/Users/Jordan/Desktop/Code-Projects/JS-Reflection/ReflectionV3/NmHomepage/scss/components/_pushy.scss */
+/* line 52, C:/Users/Jordan/Desktop/Code-Projects/JS-Reflection/ReflectionV3/NmHomepage/scss/components/_pushy-edits.scss */
 .pushy-mob-menu .nav-bar-web:hover i {
   color: #926fb1;
 }
 
-/* line 58, C:/Users/Jordan/Desktop/Code-Projects/JS-Reflection/ReflectionV3/NmHomepage/scss/components/_pushy.scss */
+/* line 58, C:/Users/Jordan/Desktop/Code-Projects/JS-Reflection/ReflectionV3/NmHomepage/scss/components/_pushy-edits.scss */
 .pushy-mob-menu .nav-bar-it i {
   color: #4183d7;
 }
 
-/* line 63, C:/Users/Jordan/Desktop/Code-Projects/JS-Reflection/ReflectionV3/NmHomepage/scss/components/_pushy.scss */
+/* line 63, C:/Users/Jordan/Desktop/Code-Projects/JS-Reflection/ReflectionV3/NmHomepage/scss/components/_pushy-edits.scss */
 .pushy-mob-menu .nav-bar-it:hover {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-/* line 66, C:/Users/Jordan/Desktop/Code-Projects/JS-Reflection/ReflectionV3/NmHomepage/scss/components/_pushy.scss */
+/* line 66, C:/Users/Jordan/Desktop/Code-Projects/JS-Reflection/ReflectionV3/NmHomepage/scss/components/_pushy-edits.scss */
 .pushy-mob-menu .nav-bar-it:hover i {
   color: #4183d7;
 }
 
-/* line 72, C:/Users/Jordan/Desktop/Code-Projects/JS-Reflection/ReflectionV3/NmHomepage/scss/components/_pushy.scss */
+/* line 72, C:/Users/Jordan/Desktop/Code-Projects/JS-Reflection/ReflectionV3/NmHomepage/scss/components/_pushy-edits.scss */
 .pushy-mob-menu .nav-bar-telecoms i {
   color: #d64541;
 }
 
-/* line 77, C:/Users/Jordan/Desktop/Code-Projects/JS-Reflection/ReflectionV3/NmHomepage/scss/components/_pushy.scss */
+/* line 77, C:/Users/Jordan/Desktop/Code-Projects/JS-Reflection/ReflectionV3/NmHomepage/scss/components/_pushy-edits.scss */
 .pushy-mob-menu .nav-bar-telecoms:hover {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-/* line 80, C:/Users/Jordan/Desktop/Code-Projects/JS-Reflection/ReflectionV3/NmHomepage/scss/components/_pushy.scss */
+/* line 80, C:/Users/Jordan/Desktop/Code-Projects/JS-Reflection/ReflectionV3/NmHomepage/scss/components/_pushy-edits.scss */
 .pushy-mob-menu .nav-bar-telecoms:hover i {
   color: #d64541;
 }
 
-/* line 86, C:/Users/Jordan/Desktop/Code-Projects/JS-Reflection/ReflectionV3/NmHomepage/scss/components/_pushy.scss */
+/* line 86, C:/Users/Jordan/Desktop/Code-Projects/JS-Reflection/ReflectionV3/NmHomepage/scss/components/_pushy-edits.scss */
 .pushy-mob-menu .nav-bar-bespoke i {
   color: #67809f;
 }
 
-/* line 91, C:/Users/Jordan/Desktop/Code-Projects/JS-Reflection/ReflectionV3/NmHomepage/scss/components/_pushy.scss */
+/* line 91, C:/Users/Jordan/Desktop/Code-Projects/JS-Reflection/ReflectionV3/NmHomepage/scss/components/_pushy-edits.scss */
 .pushy-mob-menu .nav-bar-bespoke:hover {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-/* line 94, C:/Users/Jordan/Desktop/Code-Projects/JS-Reflection/ReflectionV3/NmHomepage/scss/components/_pushy.scss */
+/* line 94, C:/Users/Jordan/Desktop/Code-Projects/JS-Reflection/ReflectionV3/NmHomepage/scss/components/_pushy-edits.scss */
 .pushy-mob-menu .nav-bar-bespoke:hover i {
   color: #67809f;
 }
 
-/* line 100, C:/Users/Jordan/Desktop/Code-Projects/JS-Reflection/ReflectionV3/NmHomepage/scss/components/_pushy.scss */
+/* line 100, C:/Users/Jordan/Desktop/Code-Projects/JS-Reflection/ReflectionV3/NmHomepage/scss/components/_pushy-edits.scss */
 .pushy-mob-menu .nav-bar-digital i {
   color: #2ecc71;
 }
 
-/* line 105, C:/Users/Jordan/Desktop/Code-Projects/JS-Reflection/ReflectionV3/NmHomepage/scss/components/_pushy.scss */
+/* line 105, C:/Users/Jordan/Desktop/Code-Projects/JS-Reflection/ReflectionV3/NmHomepage/scss/components/_pushy-edits.scss */
 .pushy-mob-menu .nav-bar-digital:hover {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-/* line 108, C:/Users/Jordan/Desktop/Code-Projects/JS-Reflection/ReflectionV3/NmHomepage/scss/components/_pushy.scss */
+/* line 108, C:/Users/Jordan/Desktop/Code-Projects/JS-Reflection/ReflectionV3/NmHomepage/scss/components/_pushy-edits.scss */
 .pushy-mob-menu .nav-bar-digital:hover i {
   color: #2ecc71;
 }
 
-/* line 113, C:/Users/Jordan/Desktop/Code-Projects/JS-Reflection/ReflectionV3/NmHomepage/scss/components/_pushy.scss */
+/* line 113, C:/Users/Jordan/Desktop/Code-Projects/JS-Reflection/ReflectionV3/NmHomepage/scss/components/_pushy-edits.scss */
 .pushy-mob-menu .nav-bar-cyber i {
   color: #f62459;
 }
 
-/* line 118, C:/Users/Jordan/Desktop/Code-Projects/JS-Reflection/ReflectionV3/NmHomepage/scss/components/_pushy.scss */
+/* line 118, C:/Users/Jordan/Desktop/Code-Projects/JS-Reflection/ReflectionV3/NmHomepage/scss/components/_pushy-edits.scss */
 .pushy-mob-menu .nav-bar-cyber:hover {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-/* line 121, C:/Users/Jordan/Desktop/Code-Projects/JS-Reflection/ReflectionV3/NmHomepage/scss/components/_pushy.scss */
+/* line 121, C:/Users/Jordan/Desktop/Code-Projects/JS-Reflection/ReflectionV3/NmHomepage/scss/components/_pushy-edits.scss */
 .pushy-mob-menu .nav-bar-cyber:hover i {
   color: #f62459;
 }
 
-/* line 127, C:/Users/Jordan/Desktop/Code-Projects/JS-Reflection/ReflectionV3/NmHomepage/scss/components/_pushy.scss */
+/* line 127, C:/Users/Jordan/Desktop/Code-Projects/JS-Reflection/ReflectionV3/NmHomepage/scss/components/_pushy-edits.scss */
 .sub-menu-pushy {
   width: 216px;
   margin: auto;
@@ -1302,7 +1545,7 @@ li a:hover {
   height: 258px;
 }
 
-/* line 135, C:/Users/Jordan/Desktop/Code-Projects/JS-Reflection/ReflectionV3/NmHomepage/scss/components/_pushy.scss */
+/* line 135, C:/Users/Jordan/Desktop/Code-Projects/JS-Reflection/ReflectionV3/NmHomepage/scss/components/_pushy-edits.scss */
 .sub-menu-pushy li {
   margin: 0px;
   font-size: 16px;
@@ -1314,19 +1557,19 @@ li a:hover {
   background-color: #21222c;
 }
 
-/* line 145, C:/Users/Jordan/Desktop/Code-Projects/JS-Reflection/ReflectionV3/NmHomepage/scss/components/_pushy.scss */
+/* line 145, C:/Users/Jordan/Desktop/Code-Projects/JS-Reflection/ReflectionV3/NmHomepage/scss/components/_pushy-edits.scss */
 .sub-menu-pushy li a {
   padding: 0px;
   text-align: center;
 }
 
-/* line 152, C:/Users/Jordan/Desktop/Code-Projects/JS-Reflection/ReflectionV3/NmHomepage/scss/components/_pushy.scss */
+/* line 152, C:/Users/Jordan/Desktop/Code-Projects/JS-Reflection/ReflectionV3/NmHomepage/scss/components/_pushy-edits.scss */
 #top-border {
   border-top: 1px solid rgba(0, 0, 0, 0.25);
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-/* line 157, C:/Users/Jordan/Desktop/Code-Projects/JS-Reflection/ReflectionV3/NmHomepage/scss/components/_pushy.scss */
+/* line 157, C:/Users/Jordan/Desktop/Code-Projects/JS-Reflection/ReflectionV3/NmHomepage/scss/components/_pushy-edits.scss */
 .pushy-head {
   background-color: #333645;
   font-size: 16px;
@@ -1335,12 +1578,12 @@ li a:hover {
   height: 56px;
 }
 
-/* line 164, C:/Users/Jordan/Desktop/Code-Projects/JS-Reflection/ReflectionV3/NmHomepage/scss/components/_pushy.scss */
+/* line 164, C:/Users/Jordan/Desktop/Code-Projects/JS-Reflection/ReflectionV3/NmHomepage/scss/components/_pushy-edits.scss */
 .pushy-head a {
   color: white;
 }
 
-/* line 169, C:/Users/Jordan/Desktop/Code-Projects/JS-Reflection/ReflectionV3/NmHomepage/scss/components/_pushy.scss */
+/* line 169, C:/Users/Jordan/Desktop/Code-Projects/JS-Reflection/ReflectionV3/NmHomepage/scss/components/_pushy-edits.scss */
 .pushy-sub {
   font-size: 14px;
   text-transform: uppercase;
@@ -1349,14 +1592,14 @@ li a:hover {
   height: 51px;
 }
 
-/* line 176, C:/Users/Jordan/Desktop/Code-Projects/JS-Reflection/ReflectionV3/NmHomepage/scss/components/_pushy.scss */
+/* line 176, C:/Users/Jordan/Desktop/Code-Projects/JS-Reflection/ReflectionV3/NmHomepage/scss/components/_pushy-edits.scss */
 .pushy-sub a {
   color: white;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   border-bottom: 1px solid rgba(0, 0, 0, 0.25);
 }
 
-/* line 183, C:/Users/Jordan/Desktop/Code-Projects/JS-Reflection/ReflectionV3/NmHomepage/scss/components/_pushy.scss */
+/* line 183, C:/Users/Jordan/Desktop/Code-Projects/JS-Reflection/ReflectionV3/NmHomepage/scss/components/_pushy-edits.scss */
 .fa-angle-double-right {
   font-size: 8px;
   margin-right: 20px;
@@ -1364,7 +1607,7 @@ li a:hover {
 }
 
 /* Menu Appearance */
-/* line 191, C:/Users/Jordan/Desktop/Code-Projects/JS-Reflection/ReflectionV3/NmHomepage/scss/components/_pushy.scss */
+/* line 191, C:/Users/Jordan/Desktop/Code-Projects/JS-Reflection/ReflectionV3/NmHomepage/scss/components/_pushy-edits.scss */
 .pushy {
   position: fixed;
   width: 350px;
@@ -1377,14 +1620,14 @@ li a:hover {
 }
 
 /* Menu Movement */
-/* line 204, C:/Users/Jordan/Desktop/Code-Projects/JS-Reflection/ReflectionV3/NmHomepage/scss/components/_pushy.scss */
+/* line 204, C:/Users/Jordan/Desktop/Code-Projects/JS-Reflection/ReflectionV3/NmHomepage/scss/components/_pushy-edits.scss */
 .pushy-left {
   -webkit-transform: translate3d(-350px, 0, 0);
   -ms-transform: translate3d(-350px, 0, 0);
   transform: translate3d(-350px, 0, 0);
 }
 
-/* line 211, C:/Users/Jordan/Desktop/Code-Projects/JS-Reflection/ReflectionV3/NmHomepage/scss/components/_pushy.scss */
+/* line 211, C:/Users/Jordan/Desktop/Code-Projects/JS-Reflection/ReflectionV3/NmHomepage/scss/components/_pushy-edits.scss */
 .pushy-open-left #container,
 .pushy-open-left .push {
   -webkit-transform: translate3d(350px, 0, 0);
@@ -1392,14 +1635,14 @@ li a:hover {
   transform: translate3d(350px, 0, 0);
 }
 
-/* line 219, C:/Users/Jordan/Desktop/Code-Projects/JS-Reflection/ReflectionV3/NmHomepage/scss/components/_pushy.scss */
+/* line 219, C:/Users/Jordan/Desktop/Code-Projects/JS-Reflection/ReflectionV3/NmHomepage/scss/components/_pushy-edits.scss */
 .pushy-right {
   -webkit-transform: translate3d(350px, 0, 0);
   -ms-transform: translate3d(350px, 0, 0);
   transform: translate3d(350px, 0, 0);
 }
 
-/* line 226, C:/Users/Jordan/Desktop/Code-Projects/JS-Reflection/ReflectionV3/NmHomepage/scss/components/_pushy.scss */
+/* line 226, C:/Users/Jordan/Desktop/Code-Projects/JS-Reflection/ReflectionV3/NmHomepage/scss/components/_pushy-edits.scss */
 .pushy-open-right #container,
 .pushy-open-right .push {
   -webkit-transform: translate3d(-350px, 0, 0);
@@ -1407,7 +1650,7 @@ li a:hover {
   transform: translate3d(-350px, 0, 0);
 }
 
-/* line 236, C:/Users/Jordan/Desktop/Code-Projects/JS-Reflection/ReflectionV3/NmHomepage/scss/components/_pushy.scss */
+/* line 236, C:/Users/Jordan/Desktop/Code-Projects/JS-Reflection/ReflectionV3/NmHomepage/scss/components/_pushy-edits.scss */
 .pushy-open-left .pushy,
 .pushy-open-right .pushy {
   -webkit-transform: translate3d(0, 0, 0);
@@ -1415,43 +1658,43 @@ li a:hover {
   transform: translate3d(0, 0, 0);
 }
 
-/* line 242, C:/Users/Jordan/Desktop/Code-Projects/JS-Reflection/ReflectionV3/NmHomepage/scss/components/_pushy.scss */
+/* line 242, C:/Users/Jordan/Desktop/Code-Projects/JS-Reflection/ReflectionV3/NmHomepage/scss/components/_pushy-edits.scss */
 .pushy-open-left .pushy-content,
 .pushy-open-right .pushy-content {
   visibility: visible;
 }
 
 /* Transitions */
-/* line 249, C:/Users/Jordan/Desktop/Code-Projects/JS-Reflection/ReflectionV3/NmHomepage/scss/components/_pushy.scss */
+/* line 249, C:/Users/Jordan/Desktop/Code-Projects/JS-Reflection/ReflectionV3/NmHomepage/scss/components/_pushy-edits.scss */
 #container,
 .pushy,
 .push {
-  transition: transform 0.2s cubic-bezier(0.16, 0.68, 0.43, 0.99);
+  transition: transform 0.5s cubic-bezier(0.16, 0.68, 0.43, 0.99);
 }
 
-/* line 255, C:/Users/Jordan/Desktop/Code-Projects/JS-Reflection/ReflectionV3/NmHomepage/scss/components/_pushy.scss */
+/* line 255, C:/Users/Jordan/Desktop/Code-Projects/JS-Reflection/ReflectionV3/NmHomepage/scss/components/_pushy-edits.scss */
 .pushy-content {
-  transition: visibility 0.2s cubic-bezier(0.16, 0.68, 0.43, 0.99);
+  transition: visibility 0.5s cubic-bezier(0.16, 0.68, 0.43, 0.99);
   width: 100%;
 }
 
-/* line 260, C:/Users/Jordan/Desktop/Code-Projects/JS-Reflection/ReflectionV3/NmHomepage/scss/components/_pushy.scss */
+/* line 260, C:/Users/Jordan/Desktop/Code-Projects/JS-Reflection/ReflectionV3/NmHomepage/scss/components/_pushy-edits.scss */
 .pushy-content ul {
   padding-left: 0;
 }
 
-/* line 264, C:/Users/Jordan/Desktop/Code-Projects/JS-Reflection/ReflectionV3/NmHomepage/scss/components/_pushy.scss */
+/* line 264, C:/Users/Jordan/Desktop/Code-Projects/JS-Reflection/ReflectionV3/NmHomepage/scss/components/_pushy-edits.scss */
 .pushy-link {
   list-style: none;
 }
 
 /* Site Overlay */
-/* line 270, C:/Users/Jordan/Desktop/Code-Projects/JS-Reflection/ReflectionV3/NmHomepage/scss/components/_pushy.scss */
+/* line 270, C:/Users/Jordan/Desktop/Code-Projects/JS-Reflection/ReflectionV3/NmHomepage/scss/components/_pushy-edits.scss */
 .site-overlay {
   display: none;
 }
 
-/* line 276, C:/Users/Jordan/Desktop/Code-Projects/JS-Reflection/ReflectionV3/NmHomepage/scss/components/_pushy.scss */
+/* line 276, C:/Users/Jordan/Desktop/Code-Projects/JS-Reflection/ReflectionV3/NmHomepage/scss/components/_pushy-edits.scss */
 .pushy-open-left .site-overlay,
 .pushy-open-right .site-overlay {
   display: block;

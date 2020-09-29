@@ -1,190 +1,9 @@
-.pushy {
-    background-color: $nm-blue;
-}
+/*! Pushy - v1.3.0 - 2019-6-25
+* Pushy is a responsive off-canvas navigation menu using CSS transforms & transitions.
+* https://github.com/christophery/pushy/
+* by Christopher Yee */
 
-.pushy-mob-menu {
-    @media screen and (min-width: 992px) {
-        display: none;
-    }
-
-    .top-sub {
-        text-align: center;
-        outline: 1px solid rgba(0, 0, 0, 0.25);
-        border: 1px solid hsla(0, 0%, 100%, 0.1);
-        margin: 43px auto 10px;
-        width: 216px;
-        list-style: none;
-        height: 69px;
-        font-size: 18px;
-        padding-top: 5px;
-    }
-
-    .top-sub:hover {
-        background-color: hsla(0, 0%, 100%, 0.1);
-    }
-
-    .nav-button {
-        margin: auto;
-        width: 216px;
-        height: 112px;
-        line-height: 0;
-        outline: 1px solid rgba(0, 0, 0, 0.25);
-        border: 1px solid hsla(0, 0%, 100%, 0.1);
-        border-radius: 3px;
-
-        p:first-of-type {
-            font-size: 10px;
-        }
-    }
-    .nav-button:hover {
-        background-color: hsla(0, 0%, 100%, 0.1);
-    }
-
-    .nav-bar-web {
-        i {
-            color: $purple;
-        }
-    }
-
-    .nav-bar-web:hover {
-        background-color: hsla(0, 0%, 100%, 0.1);
-
-        i {
-            color: $purple;
-        }
-    }
-
-    .nav-bar-it {
-        i {
-            color: $light-blue;
-        }
-    }
-
-    .nav-bar-it:hover {
-        background-color: hsla(0, 0%, 100%, 0.1);
-
-        i {
-            color: $light-blue;
-        }
-    }
-
-    .nav-bar-telecoms {
-        i {
-            color: $red;
-        }
-    }
-
-    .nav-bar-telecoms:hover {
-        background-color: hsla(0, 0%, 100%, 0.1);
-
-        i {
-            color: $red;
-        }
-    }
-
-    .nav-bar-bespoke {
-        i {
-            color: $grey-blue;
-        }
-    }
-
-    .nav-bar-bespoke:hover {
-        background-color: hsla(0, 0%, 100%, 0.1);
-
-        i {
-            color: $grey-blue;
-        }
-    }
-
-    .nav-bar-digital {
-        i {
-            color: $green;
-        }
-    }
-
-    .nav-bar-digital:hover {
-        background-color: hsla(0, 0%, 100%, 0.1);
-
-        i {
-            color: $green;
-        }
-    }
-    .nav-bar-cyber {
-        i {
-            color: $hot-pink;
-        }
-    }
-
-    .nav-bar-cyber:hover {
-        background-color: hsla(0, 0%, 100%, 0.1);
-
-        i {
-            color: $hot-pink;
-        }
-    }
-}
-
-.sub-menu-pushy {
-    width: 216px;
-    margin: auto;
-    text-decoration: none;
-    margin: 20px auto 90px;
-    background-color: rgba(0, 0, 0, 0.5);
-    height: 258px;
-
-    li {
-        margin: 0px;
-        font-size: 16px;
-        list-style: none;
-        border-top: 1px solid hsla(0, 0%, 100%, 0.1);
-        border-bottom: 1px solid rgba(0, 0, 0, 0.25);
-        padding: 15px 0px 0px;
-        text-align: center;
-        background-color: $nm-blue-dark;
-
-        a {
-            padding: 0px;
-            text-align: center;
-        }
-    }
-}
-
-#top-border {
-    border-top: 1px solid rgba(0, 0, 0, 0.25);
-    border-bottom: 1px solid hsla(0, 0%, 100%, 0.1);
-}
-
-.pushy-head {
-    background-color: $nm-blue;
-    font-size: 16px;
-    text-transform: uppercase;
-    text-align: left;
-    height: 56px;
-
-    a {
-        color: white;
-    }
-}
-
-.pushy-sub {
-    font-size: 14px;
-    text-transform: uppercase;
-    background-color: rgba(0, 0, 0, 0.2);
-    text-align: left;
-    height: 51px;
-
-    a {
-        color: white;
-        border-top: 1px solid hsla(0, 0%, 100%, 0.1);
-        border-bottom: 1px solid rgba(0, 0, 0, 0.25);
-    }
-}
-
-.fa-angle-double-right {
-    font-size: 8px;
-    margin-right: 20px;
-    margin-left: -20px;
-}
+$menu_width: 200px !default;
 
 /* Menu Appearance */
 
@@ -194,9 +13,36 @@
     height: 100%;
     top: 0;
     z-index: 9999;
-
+    background: #191918;
     overflow: auto;
     -webkit-overflow-scrolling: touch; /* enables momentum scrolling in iOS overflow elements */
+
+    a {
+        display: block;
+        color: #b3b3b1;
+        padding: 15px 30px;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: #fff;
+    }
+
+    ul:first-child {
+        margin-top: 10px;
+    }
+
+    &.pushy-left {
+        left: 0;
+    }
+
+    &.pushy-right {
+        right: 0;
+    }
+}
+
+.pushy-content {
+    visibility: hidden;
 }
 
 /* Menu Movement */
@@ -244,7 +90,7 @@
     }
 }
 
-/* Transitions */
+/* Menu Transitions */
 
 #container,
 .pushy,
@@ -254,15 +100,6 @@
 
 .pushy-content {
     transition: visibility 0.2s cubic-bezier(0.16, 0.68, 0.43, 0.99);
-    width: 100%;
-}
-
-.pushy-content ul {
-    padding-left: 0;
-}
-
-.pushy-link {
-    list-style: none;
 }
 
 /* Site Overlay */
@@ -280,7 +117,7 @@
         right: 0;
         bottom: 0;
         left: 0;
-        z-index: 500;
+        z-index: 9998;
         background-color: rgba(0, 0, 0, 0.5);
         -webkit-animation: fade 500ms;
         animation: fade 500ms;
@@ -302,5 +139,90 @@
     }
     100% {
         opacity: 1;
+    }
+}
+
+/* Submenu Appearance */
+
+.pushy-submenu {
+    > ul {
+        padding-left: 15px;
+        transition: max-height 0.4s ease-in-out, visibility 0.4s ease-in-out;
+
+        .pushy-link {
+            transition: opacity 0.2s ease-in-out;
+        }
+    }
+
+    /* Submenu Buttons */
+
+    button {
+        width: 100%;
+        color: #b3b3b1;
+        padding: 15px 30px;
+        text-align: left;
+        background: transparent;
+        border: 0;
+
+        &:hover {
+            color: #fff;
+        }
+    }
+
+    /* Submenu Icon */
+
+    > a,
+    > button {
+        position: relative;
+    }
+
+    > a::after,
+    > button::after {
+        content: "";
+        display: block;
+        height: 11px;
+        width: 8px;
+        position: absolute;
+        top: 50%;
+        right: 15px;
+        background: url("../img/arrow.svg") no-repeat;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        transition: transform 0.2s;
+    }
+}
+
+/* Submenu Movement */
+
+.pushy-submenu-closed {
+    > ul {
+        max-height: 0;
+        overflow: hidden;
+        visibility: hidden;
+    }
+
+    .pushy-link {
+        opacity: 0;
+    }
+}
+
+.pushy-submenu-open {
+    > ul {
+        max-height: 1000px;
+        visibility: visible;
+    }
+
+    .pushy-link {
+        opacity: 1;
+    }
+
+    /* Submenu Icon */
+
+    > a::after,
+    > button::after {
+        -webkit-transform: translateY(-50%) rotate(90deg);
+        -ms-transform: translateY(-50%) rotate(90deg);
+        transform: translateY(-50%) rotate(90deg);
     }
 }
