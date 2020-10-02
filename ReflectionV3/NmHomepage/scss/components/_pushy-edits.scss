@@ -1,5 +1,13 @@
+$menu_width: 350px;
+
 .pushy {
     background-color: $nm-blue;
+}
+
+.sb-class {
+    transform: translateX(-350px);
+    transition: all 1s ease-in;
+    z-index: 50;
 }
 
 .pushy-mob-menu {
@@ -194,7 +202,7 @@
     height: 100%;
     top: 0;
     z-index: 9999;
-
+    transition: transform 1s ease-in;
     overflow: auto;
     -webkit-overflow-scrolling: touch; /* enables momentum scrolling in iOS overflow elements */
 }
@@ -249,12 +257,18 @@
 #container,
 .pushy,
 .push {
-    transition: transform 0.5s cubic-bezier(0.16, 0.68, 0.43, 0.99);
+    transition: transform 1s cubic-bezier(0.16, 0.68, 0.43, 0.99);
 }
 
 .pushy-content {
-    transition: visibility 0.5s cubic-bezier(0.16, 0.68, 0.43, 0.99);
+    transition: visibility 1s cubic-bezier(0.16, 0.68, 0.43, 0.99);
     width: 100%;
+    z-index: 50;
+}
+
+.pushy.pushy-right {
+    right: 350px;
+    z-index: 49;
 }
 
 .pushy-content ul {
@@ -263,6 +277,13 @@
 
 .pushy-link {
     list-style: none;
+}
+
+.pushy-sub,
+.pushy-head {
+    & a:hover {
+        text-decoration: none;
+    }
 }
 
 /* Site Overlay */
@@ -274,6 +295,7 @@
 .pushy-open-left,
 .pushy-open-right {
     .site-overlay {
+        transition: transform 1s ease-in;
         display: block;
         position: fixed;
         top: 0;
